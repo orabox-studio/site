@@ -1,15 +1,19 @@
 # OraBox site
 
-Public landing and privacy hub for [OraBox Studio](https://github.com/orabox-studio).
+Public tree for **https://orabox.app** (Plesk `www`).
 
-## Plan
+```
+public/
+  index.html                 → /
+  apps/<slug>/index.html     → /apps/<slug>/
+  privacy/<slug>/index.html  → /privacy/<slug>/
+```
 
-- Root: studio / product index
-- `/privacy/<product>`: per-app privacy (SpareRemote can keep existing URL until cutover)
-- Deploy: GitHub Pages from this repo (`orabox-studio.github.io` or custom domain **orabox.app**)
+Deploy (shared credentials in `orabox-studio/.env`):
 
-## SpareRemote (current)
+```bash
+cd ../orabox-studio
+./scripts/deploy-site-tree.sh
+```
 
-Privacy remains at the existing Pages URL until DNS/cutover:
-
-https://edwm101.github.io/spareremote-site/privacy-policy.html
+See [SITE-AND-DEPLOY.md](https://github.com/orabox-studio/studio/blob/main/docs/SITE-AND-DEPLOY.md).

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OraBox</title>
+  <meta name="description" content="OraBox Studio — focused utility apps, shipped on a ~10-day cadence." />
+  <style>
+    :root {
+      --bg0: #0a1014;
+      --bg1: #132028;
+      --fg: #eef3f6;
+      --muted: #8fa3b0;
+      --accent: #2ec4b6;
+      --line: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--fg);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      background:
+        radial-gradient(900px 480px at 12% -8%, #1d3840 0%, transparent 55%),
+        radial-gradient(700px 420px at 95% 10%, #1a2c24 0%, transparent 50%),
+        linear-gradient(160deg, var(--bg1), var(--bg0));
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: clamp(3rem, 12vh, 7rem) 1.5rem 4rem;
+    }
+    .brand {
+      font-size: clamp(3rem, 10vw, 5rem);
+      letter-spacing: -0.04em;
+      margin: 0 0 0.35rem;
+      font-weight: 700;
+    }
+    .lede {
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.55;
+      max-width: 34rem;
+      margin: 0 0 2.5rem;
+    }
+    h2 {
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 0.85rem;
+      font-weight: 600;
+    }
+    ul { list-style: none; padding: 0; margin: 0; }
+    li {
+      border-top: 1px solid var(--line);
+    }
+    li:last-child { border-bottom: 1px solid var(--line); }
+    a.app {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 0;
+      color: var(--fg);
+      text-decoration: none;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+    a.app:hover .name { color: var(--accent); }
+    .name { font-weight: 600; }
+    .meta { color: var(--muted); font-size: 0.92rem; }
+    footer {
+      margin-top: 3rem;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="brand">OraBox</h1>
+    <p class="lede">Studio shipping focused utility apps about every ten days. One product, one repo, one clear job.</p>
+    <h2>Apps</h2>
+    <ul>
+      <li>
+        <a class="app" href="/apps/spare-remote/">
+          <span class="name">SpareRemote</span>
+          <span class="meta">Wi‑Fi TV remote</span>
+        </a>
+      </li>
+    </ul>
+    <footer>
+      <a href="https://github.com/orabox-studio">GitHub</a>
+      ·
+      <a href="/privacy/spare-remote/">SpareRemote privacy</a>
+    </footer>
+  </main>
+</body>
+</html>
