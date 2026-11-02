@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OraBox Studio</title>
+  <style>
+    :root {
+      --bg: #0c1117;
+      --fg: #e8eef4;
+      --muted: #8b9aab;
+      --accent: #3dd6c6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1a2a33 0%, var(--bg) 55%);
+      color: var(--fg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2.5rem 1.5rem;
+    }
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      letter-spacing: -0.03em;
+      margin: 0 0 0.4rem;
+    }
+    p { color: var(--muted); max-width: 36rem; line-height: 1.5; margin: 0 0 1.5rem; }
+    a { color: var(--accent); }
+    ul { list-style: none; padding: 0; margin: 0; }
+    li { margin: 0.5rem 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>OraBox</h1>
+    <p>Studio shipping focused utility apps on a ~10-day cadence. First product: SpareRemote — Wi‑Fi TV remote.</p>
+    <ul>
+      <li><a href="https://github.com/orabox-studio">GitHub organization</a></li>
+      <li><a href="https://github.com/orabox-studio/spare-remote">SpareRemote</a></li>
+      <li><a href="https://edwm101.github.io/spareremote-site/privacy-policy.html">SpareRemote privacy</a></li>
+    </ul>
+  </main>
+</body>
+</html>
