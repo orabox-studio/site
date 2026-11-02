@@ -2,6 +2,8 @@
 
 Public tree for **https://orabox.app** (Plesk `www`).
 
+Lives beside `studio/` and `apps/` under local `EDWM Project/orabox/`.
+
 ```
 public/
   index.html                 → /
@@ -9,11 +11,9 @@ public/
   privacy/<slug>/index.html  → /privacy/<slug>/
 ```
 
-Deploy (shared credentials in `orabox-studio/.env`):
-
 ```bash
-cd ../orabox-studio
+cd ../studio
 ./scripts/deploy-site-tree.sh
 ```
 
-See [SITE-AND-DEPLOY.md](https://github.com/orabox-studio/studio/blob/main/docs/SITE-AND-DEPLOY.md).
+Playbook: [studio docs/SITE-AND-DEPLOY.md](https://github.com/orabox-studio/studio/blob/main/docs/SITE-AND-DEPLOY.md).
