@@ -19,10 +19,11 @@
 </head>
 <body>
   <h1>SpareRemote Privacy Policy</h1>
-  <p><strong>Last updated:</strong> October 31, 2026</p>
+  <p><strong>Last updated:</strong> November 5, 2026</p>
   <p>
     SpareRemote (“we”, “the app”) is a Wi‑Fi TV remote control application for
-    Android. This policy explains what information the app uses and why.
+    Android and iOS. This policy explains what information the app uses and why.
+    Android and iOS do not use the same Google services.
   </p>
 
   <h2>Summary</h2>
@@ -30,7 +31,8 @@
     <li>TV control happens on your local Wi‑Fi network.</li>
     <li>We do not require an account to use the remote.</li>
     <li>Device names, IPs, and pairing tokens stay on your phone for reconnection.</li>
-    <li>Crash reports are sent to Google Firebase Crashlytics; feature flags are loaded from Firebase Remote Config. Ads are off.</li>
+    <li>On iOS, the current App Store build does not initialize Firebase or AdMob.</li>
+    <li>On Android, crash reports can go to Google Firebase Crashlytics and feature flags can load from Firebase Remote Config. Ads are off by default.</li>
   </ul>
 
   <h2>Information we process on your device</h2>
@@ -42,20 +44,31 @@
 
   <h2>Internet permissions</h2>
   <p>
-    The app uses network access to talk to TVs on your LAN and, when enabled, to
-    load remote configuration, analytics, crash reporting, or ads from Google services.
+    The app uses network access to talk to TVs on your LAN. On Android, when those
+    features are enabled, it may also load remote configuration, analytics, crash
+    reporting, or ads from Google services.
   </p>
 
-  <h2>Analytics, crash reporting, and ads</h2>
+  <h2>Android: analytics, crash reporting, and ads</h2>
   <p>
-    SpareRemote uses Google Firebase (Crashlytics, Remote Config, and Analytics where enabled) and may later use
-    and Google AdMob. These services can collect device and usage information
-    according to Google’s policies when enabled. Ads are off by default and can
-    be turned on remotely later.
+    The Android app can use Google Firebase (Crashlytics, Remote Config, and
+    Analytics where enabled) and Google AdMob. These services can collect device
+    and usage information according to Google’s policies when enabled. Ads are
+    off by default and can be turned on remotely later.
   </p>
   <p>
-    Advertising ID may be used if ads are enabled. You can reset or opt out of
-    personalized ads in your Android settings.
+    Advertising ID may be used on Android if ads are enabled. You can reset or
+    opt out of personalized ads in your Android settings.
+  </p>
+
+  <h2>iOS: no Firebase or AdMob in the current App Store build</h2>
+  <p>
+    In the current iOS App Store build, SpareRemote does not initialize Firebase
+    (Crashlytics, Remote Config, or Analytics) and does not initialize AdMob or
+    request App Tracking Transparency. TV discovery and control stay on the local
+    network. Saved device names, IPs, pairing tokens, and preferences stay on
+    the device. The iOS app can open this policy in a browser and can show
+    Apple’s in-app review prompt.
   </p>
 
   <h2>Data sharing</h2>
@@ -73,7 +86,7 @@
   <h2>Your choices</h2>
   <ul>
     <li>Uninstall the app to remove local data stored by SpareRemote.</li>
-    <li>Revoke network permissions in Android settings to stop LAN discovery/control.</li>
+    <li>Revoke local-network / Wi‑Fi permissions in system settings to stop LAN discovery/control.</li>
     <li>Contact us to ask questions about this policy.</li>
   </ul>
 
